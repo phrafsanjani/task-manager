@@ -19,7 +19,7 @@ public:
     Time getFinishTime() const;
     std::vector<Task>& getTasks() { return tasks; }
     Employee& operator+=(const Task& task);
-//private:
+private:
     std::string name;
     std::string ssid;
     Time startTime;
