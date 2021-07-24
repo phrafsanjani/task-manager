@@ -1,13 +1,13 @@
 # Task Manager
 The goal of this program is managing and assigning tasks to employees of an 
-organization. Project details is as follows:
+organization. Project details are as follows:
 ## Features
 + The program must be always ready to get commands from the user.
 + `today` command: shows today's tasks.
 + `month` command: shows current month's tasks.
 + `add task` command: gets a new task from the user(name of the task, beginning 
-and ending dates of the task in the form `dd-mm hh:mm`) and saves it in the 
-file.
+and ending dates and times of the task in the form `dd-mm hh:mm`) and saves it 
+in the file.
 + `find time` command: gets a time in the form `hh:mm` and finds an empty 
 interval with the input length in the current month, the empty intervals that 
 are closer to the current date are the first prorities. If there were no empty 
@@ -23,7 +23,7 @@ the employees' list.
 and assigns the task to the employee.
 + `schedule` command: the input of this command is a date in the form `dd-mm` 
 followed by an employee's SSID. It removes the employee's previous tasks in that
- day and then assigns to the employee the maximum subset of the doable tasks of 
+ day and then assigns to the employee the maximum subset of the doable tasks in 
 the day and prints them to the console(a greedy algorithm).
 + `exit` command: saves the changes in the file and exits the program.
 ## Implementation
@@ -37,6 +37,12 @@ negative points(except for `main`).
 + Month has to be implemented as a class, containing days of the month.
 + Each day contains a list of that day's tasks. Use `std::vector` to store this 
 list.
+## Notes
++ Performance was not a concern in this program.
++ The task's information is stored in a file named `bin`. This file should be 
+next to the build files(i.e. in the same directory). If this file doesn't exist,
+ it's created and if it exists, it's opened and the information stored in it are
+ read by the program.
 ## Sample
 ```
  ~ add task
