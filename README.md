@@ -41,8 +41,8 @@ list.
 + Performance was not a concern in this program.
 + The task's information is stored in a file named `bin`. This file should be 
 next to the build files(i.e. in the same directory). If this file doesn't exist,
- it's created and if it exists, it's opened and the information stored in it are
- read by the program.
+ it's created and if it exists, it's opened and the information stored in it is 
+read by the program.
 ## Sample
 ```
  ~ add task
